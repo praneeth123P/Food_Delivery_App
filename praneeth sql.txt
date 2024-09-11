@@ -12,7 +12,7 @@ CREATE TABLE `restaurant_owner` (
   `bank_account_num` double NOT NULL,
   `email` varchar(25) NOT NULL,
   `login_password` varchar(10) NOT NULL,
-  `avg_rating` decimal(10,0) NOT NULL,
+  `avg_rating` int NOT NULL,
   `curr_order_accepting_status` varchar(40) NOT NULL,
   PRIMARY KEY (`res_id`)
 ) 
