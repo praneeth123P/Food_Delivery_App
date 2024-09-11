@@ -31,19 +31,10 @@
     try {
     
         Class.forName("com.mysql.cj.jdbc.Driver");
-
-       
-        		
         con = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
-
-       
         statement = con.createStatement();
-
-        
         String sql = "SELECT res_id,res_name,address,location,open_time,close_time,gst_number,cuisines_list,contact_num,bank_account_num,email,login_password,avg_rating,curr_order_accepting_status FROM restaurant_owner";
          resultSet = statement.executeQuery(sql);
-
-       
         while (resultSet.next()) {
             String res_id = resultSet.getString("res_id");
             String res_name = resultSet.getString("res_name");
@@ -59,15 +50,8 @@
             String login_password = resultSet.getString("login_password");
             Integer avg_rating = resultSet.getInt("avg_rating");
             String curr_order_accepting_status = resultSet.getString("curr_order_accepting_status");
-            
-            
-     
             %>
-            
-           
-
             <h3><%= res_id %></h3>
-            
             <h4><%= res_name %></h4>
             <h4><%= address %></h4>
             <h4><%= location %></h4>
@@ -81,9 +65,6 @@
             <h4><%= login_password %></h4>
             <h4><%= avg_rating %></h4>
             <h4><%= curr_order_accepting_status%></h4>
-            
-     
-        
     <%
             } 
         } catch (Exception e) {
