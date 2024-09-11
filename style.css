@@ -1,0 +1,40 @@
+
+body
+{
+	background-image:url("https://static.vecteezy.com/system/resources/previews/040/986/494/non_2x/ai-generated-cutlery-setting-on-a-restaurant-table-advertising-foodgraphy-photo.jpg");
+	background-size:cover;
+}
+.text
+{
+	color:orange;
+	text-align:center;
+	border:1px solid blue;
+	width:300px;
+	margin:auto;
+}
+
+img
+{
+	width:150px;
+}
+ul
+{
+	float:right;
+}
+ul li 
+{
+	display:inline-block;
+}
+ul li a
+{
+	margin-top:30px;
+	font-size:30px;
+	padding:30px;
+	text-decoration:none;
+	color:aqua;
+}
+ul li a:hover
+{
+	color:orange;
+	text-decoration:underline;
+}
