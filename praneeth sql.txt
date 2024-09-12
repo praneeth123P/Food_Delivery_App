@@ -22,7 +22,7 @@ insert into restaurant_owner values(102,"pizzahut","diamondpark","vizag","10AM",
 insert into restaurant_owner values(103,"KFC","diamondpark","vizag","10AM","11PM",23,"fooditems",1234567890,546738920,"ghi@gmail.com","p789",5,"yes");
 
 select*from restaurant_owner;
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 food-items database
 CREATE TABLE `food_items` (
   `food_id` varchar(10) NOT NULL,
@@ -36,7 +36,17 @@ CREATE TABLE `food_items` (
   `menu_id` varchar(20) NOT NULL,
   PRIMARY KEY (`food_id`)
 )
+INSERT QUERY:
+insert into food_items values("101","pizza",200,"pizza pastry food","no","yes",5,111,1011);
+insert into food_items values("102","burger",150,"burger pastry food","yes","yes",5,112,1012);
+insert into food_items values("103","noodles",100,"noodles chinese food","yes","yes",5,113,1013);
+insert into food_items values("104","biriyani",300,"biriyani is hot food","yes","yes",5,114,1014);
+insert into food_items values("105","cococola",90,"cococola is drink","no","no",5,115,1015);
 
+SELECT STATEMENT:
+select * from food_items;
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 menu database
 CREATE TABLE `menu` (
   `Menu_id` varchar(10) NOT NULL,
@@ -44,6 +54,16 @@ CREATE TABLE `menu` (
   PRIMARY KEY (`Menu_id`)
 )
 
+INSERT QUERY:
+insert into menu values("1011","101");
+insert into menu values("1012","102");
+insert into menu values("1013","103");
+insert into menu values("1014","104");
+insert into menu values("1015","105");
+SELECT STATEMENT:
+
+select * from menu;
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 orders database
 CREATE TABLE `orders` (
   `order_id` varchar(20) NOT NULL,
@@ -57,7 +77,7 @@ CREATE TABLE `orders` (
   `order_status` varchar(10) NOT NULL,
   PRIMARY KEY (`order_id`)
 ) 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE `res_reviews` (
   `review_id` varchar(20) NOT NULL,
   `res_id` varchar(10) NOT NULL,
@@ -68,7 +88,7 @@ CREATE TABLE `res_reviews` (
   `rate_of_5` int NOT NULL,
   PRIMARY KEY (`review_id`)
 )
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
