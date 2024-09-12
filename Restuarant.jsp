@@ -75,10 +75,5 @@
             if (con != null) try { con.close(); } catch (SQLException ignore) {}
         }
     %>
-    <a href="Restuarant.jsp">Back to Home</a>
-
-        
-
-
 </body>
 </html>
